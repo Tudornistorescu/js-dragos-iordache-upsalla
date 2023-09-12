@@ -59,7 +59,7 @@ console.warn(`
 for (var i = 1; i <= limitA; i++) {
   if (i % denominator === 0) {
     console.log(
-      'Toate numerele divizbile cu ' +
+      'Toate numerele divizibile cu ' +
         denominator +
         ' pana la ' +
         limitA +
