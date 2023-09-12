@@ -2,7 +2,7 @@ var company = 'The JavaScripts SRL';
 var companyRegistration = 'J40/11111/2017';
 var companyCode = '12345678';
 var companyAddress =
-  'Strada Scripturilor, Numarul 94, Etaj 1, Sector 1, Bucuresti';
+  'Strada Scripturilor, Numarul 94, Etaj 3, Sector 1, Bucuresti';
 var brandName = 'Pixellab';
 
 console.log(`
