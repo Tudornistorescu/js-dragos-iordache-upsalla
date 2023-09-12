@@ -16,7 +16,7 @@ var routes = [
   },
 ];
 
-var selectedRoute = '/';
+var selectedRoute = '/about-us';
 
 switch (selectedRoute) {
   case '/':
@@ -24,14 +24,22 @@ switch (selectedRoute) {
       return route.route === selectedRoute;
     });
     console.log(route.text);
+    break;
+
   case '/about':
     var route = routes.find(function (route) {
       return route.route === selectedRoute;
     });
     console.log(route.text);
+    break;
+
   case '/contact':
     var route = routes.find(function (route) {
       return route.route === selectedRoute;
     });
     console.log(route.text);
+    break;
+
+  default:
+    console.log('404');
 }
