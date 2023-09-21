@@ -5,7 +5,11 @@ function getTime() {
   const seconds = date.getSeconds();
   const milliseconds = date.getMilliseconds();
 
-  return `${hours}:${minutes}:${seconds}:${milliseconds}`;
+  return `${hours.toString().padStart(2, '0')}:${minutes
+    .toString()
+    .padStart(2, '0')}:${seconds.toString().padStart(2, '0')}:${milliseconds
+    .toString()
+    .padStart(3, '0')}`;
 }
 
 const exactTime = getTime();
