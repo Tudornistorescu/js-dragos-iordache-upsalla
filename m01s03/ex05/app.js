@@ -1,6 +1,10 @@
 var person = {
   name: 'Dragos',
+<<<<<<< HEAD
   surname: 'iordache',
+=======
+  surname: 'Iordache',
+>>>>>>> 121fc967390ceca65508113c5f6d6502daded0d6
   age: 36,
   petOwner: false,
   skills: ['html', 'javascript', 'css'],
@@ -8,7 +12,11 @@ var person = {
     {
       name: 'Larry',
       surname: 'Larryson',
+<<<<<<< HEAD
       age: 31,
+=======
+      age: 30,
+>>>>>>> 121fc967390ceca65508113c5f6d6502daded0d6
     },
     {
       name: 'Steven',
@@ -24,15 +32,25 @@ var person = {
 };
 
 console.warn(`
+<<<<<<< HEAD
 Afisiaza propozitia: "Ma numesc xxx yyy si stiu
 html si css" Foloseste notatia cu paranteze patrate
 `);
 
+=======
+  Afiseaza propozitia: “Ma numesc xxx yyy si stiu
+  html si css.” Foloseste notatia cu paranteze patrate
+`);
+>>>>>>> 121fc967390ceca65508113c5f6d6502daded0d6
 console.log(
   'Ma numesc ' +
     person.name +
     ' ' +
+<<<<<<< HEAD
     person.name +
+=======
+    person.surname +
+>>>>>>> 121fc967390ceca65508113c5f6d6502daded0d6
     ' si stiu ' +
     person.skills[0] +
     ' si ' +
@@ -41,6 +59,7 @@ console.log(
 );
 
 console.warn(`
+<<<<<<< HEAD
 Afiseaza propozitia "Sunt xxx si acum invat JavaScript."
 Nu folosi valoarea din arrayul de skills.
 `);
@@ -52,6 +71,18 @@ Afiseaza propozitia "am x prieteni: Larry, Steven si Carol."
 Foloseste proprietatea length si apeleaza direct proprietatile name ale obiecterlor.
 `);
 
+=======
+  Afiseaza propozitia “Sunt xxx si acum invat JavaScript.”
+  Nu folosi valoarea din arrayul de skills.
+`);
+console.log('Sunt ' + person.name + ' si acum invat JavaScript.');
+
+console.warn(`
+  Afiseaza propozitia “Am x prieteni: Larry, Steven si Carol.”
+  Foloseste proprietatea length si apeleaza direct proprietatile
+  name ale obiectelor.
+`);
+>>>>>>> 121fc967390ceca65508113c5f6d6502daded0d6
 console.log(
   'Am ' +
     person.friends.length +
