@@ -20,15 +20,11 @@ class Vehicle {
   }
 
   accelerate() {
-    this.speed++;
-
-    this.displaySpeed();
+    this.setSpeed(this.speed + 1);
   }
 
   decelerate() {
-    this.speed--;
-
-    this.displaySpeed();
+    this.setSpeed(this.speed - 1);
   }
 
   setSpeed(speed = 5) {
