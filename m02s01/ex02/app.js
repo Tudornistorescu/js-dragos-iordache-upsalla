@@ -16,11 +16,7 @@ class Vehicle {
   }
 
   displaySpeed() {
-<<<<<<< HEAD
     console.log(`Viteza curenta este: ${this.speed}.`);
-=======
-    console.log(`Viteza curenta este: ${this.speed}`);
->>>>>>> 121fc967390ceca65508113c5f6d6502daded0d6
   }
 
   accelerate() {
@@ -48,7 +44,6 @@ class Vehicle {
     this.displaySpeed();
   }
 }
-<<<<<<< HEAD
 
 class Car extends Vehicle {
   constructor(make, color, speed, topSpeed, topReverseSpeed) {
@@ -60,9 +55,20 @@ class Bicycle extends Vehicle {
   constructor(make, color, speed, topSpeed) {
     super(make, color, 2, speed, topSpeed, 0);
   }
+
+  // exemplu naiv de polimorfism
+  decelerate() {
+    if (--this.speed < 0) {
+      this.speed = 0;
+    }
+
+    this.displaySpeed();
+  }
 }
 
-const bike = new Bicycle('pegas', 'red', 8, 20);
-bike.setSpeed('');
-=======
->>>>>>> 121fc967390ceca65508113c5f6d6502daded0d6
+const bike = new Bicycle('Pegas', 'red', 8, 20);
+bike.setSpeed(2);
+
+bike.decelerate();
+bike.decelerate();
+bike.decelerate();
